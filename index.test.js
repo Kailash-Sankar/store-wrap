@@ -54,10 +54,20 @@ const testObjects = {
   });
 
   test(`${storeType} generate handle`, () => {
-    const jestStore = StoreWrap.generateHandle(storeType, "jest-key-test");
+    const jestStore = StoreWrap.generateHandle(storeType, "jest-key-test-1");
     expect(jestStore.set("something")).toBe(true);
     expect(jestStore.get()).toEqual("something");
     expect(jestStore.remove()).toBe(true);
     expect(jestStore.get()).toBeNull();
   });
+});
+
+test(`StoreWrap exception`, () => {
+  const jestStore = StoreWrap("some_dummy");
+  expect(jestStore).toBeNull();
+});
+
+test(`generateHandle exception`, () => {
+  const jestStore = StoreWrap.generateHandle("some_dummy", "jest-key-test-2");
+  expect(jestStore).toBeNull();
 });

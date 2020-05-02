@@ -72,11 +72,14 @@ function StoreWrap(storeType) {
 const generateHandle = (storeType, key) => {
   const instance = StoreWrap(storeType);
 
-  return {
-    set: (value) => instance.set(key, value),
-    get: () => instance.get(key),
-    remove: () => instance.remove(key),
-  };
+  if (instance) {
+    return {
+      set: (value) => instance.set(key, value),
+      get: () => instance.get(key),
+      remove: () => instance.remove(key),
+    };
+  }
+  return null;
 };
 
 module.exports = StoreWrap;
