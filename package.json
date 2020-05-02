@@ -1,6 +1,6 @@
 {
   "name": "store-wrap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple wrapper around browser storage with some useful utilities",
   "main": "index.js",
   "scripts": {
