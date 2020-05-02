@@ -1,0 +1,28 @@
+{
+  "name": "store-wrap",
+  "version": "0.0.0",
+  "description": "A simple wrapper around browser storage with some useful utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kailash-Sankar/store-wrap.git"
+  },
+  "keywords": [
+    "storage",
+    "localStorage",
+    "sessionStorage",
+    "store"
+  ],
+  "author": "Kailash Sankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kailash-Sankar/store-wrap/issues"
+  },
+  "homepage": "https://github.com/Kailash-Sankar/store-wrap#readme",
+  "devDependencies": {
+    "jest": "^25.4.0"
+  }
+}
